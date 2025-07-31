@@ -16,6 +16,7 @@ class LlmFactory:
     provider_to_class = {
         "ollama": "mem0.llms.ollama.OllamaLLM",
         "openai": "mem0.llms.openai.OpenAILLM",
+        "doubao": "mem0.llms.doubao.DoubaoLLM",
         "groq": "mem0.llms.groq.GroqLLM",
         "together": "mem0.llms.together.TogetherLLM",
         "aws_bedrock": "mem0.llms.aws_bedrock.AWSBedrockLLM",
@@ -47,6 +48,7 @@ class LlmFactory:
 class EmbedderFactory:
     provider_to_class = {
         "openai": "mem0.embeddings.openai.OpenAIEmbedding",
+        "doubao": "mem0.embeddings.doubao.DoubaoEmbedding",
         "ollama": "mem0.embeddings.ollama.OllamaEmbedding",
         "huggingface": "mem0.embeddings.huggingface.HuggingFaceEmbedding",
         "azure_openai": "mem0.embeddings.azure_openai.AzureOpenAIEmbedding",
